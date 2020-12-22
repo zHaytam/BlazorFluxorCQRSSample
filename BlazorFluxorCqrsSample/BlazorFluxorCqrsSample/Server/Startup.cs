@@ -20,7 +20,7 @@ namespace BlazorFluxorCqrsSample.Server
 		// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddMediatR(typeof(BlazorFluxorCqrsSample.BusinessLayer.RequestHandlers.GetWeatherForecastQueryHandler).Assembly);
+			services.AddMediatR(typeof(BusinessLayer.RequestHandlers.GetWeatherForecastQueryHandler).Assembly);
 			services.AddControllersWithViews();
 			services.AddRazorPages();
 		}
